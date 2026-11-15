@@ -1,0 +1,29 @@
+{
+  "editor.formatOnSave": false,
+  "emmet.includeLanguages": {
+    "html": "html"
+  },
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.root": "/",
+  "files.associations": {
+    "*.html": "html"
+  },
+  "editor.wordWrap": "on",
+  "html.format.wrapLineLength": 120,
+  "html.validate.scripts": false,
+  "html.validate.styles": false,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "css.lint.vendorPrefix": "ignore",
+  "css.lint.unknownVendorSpecificProperties": "ignore",
+  "css.lint.unknownProperties": "ignore",
+  "editor.linkedEditing": true,
+  "search.exclude": {
+    "**/assets/js/jquery.min.js": true,
+    "**/assets/js/*.min.js": true
+  },
+  "files.exclude": {
+    "**/*.webp": false
+  }
+}
