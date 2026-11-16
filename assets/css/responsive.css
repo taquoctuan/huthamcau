@@ -2697,3 +2697,45 @@ span.count-up.active {
   margin-bottom: 12px !important;
   display: inline-block !important;
 }
+
+/* ==========================================================================
+   HOMEPAGE FEATURED SECTION (.cs-hoidap .cs-titlecatehome)
+   ========================================================================== */
+.home .cs-hoidap .cs-titlecatehome,
+.cs-titlecatehome,
+h2.cs-titlecatehome {
+  margin-top: 0 !important;
+  margin-bottom: 18px !important;
+  padding-top: 0 !important;
+  padding-bottom: 12px !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  line-height: 1.4 !important;
+  color: #13622e !important;
+  border-bottom: 2px solid #f1f5f9 !important;
+  position: static !important;
+  text-align: left !important;
+  width: 100% !important;
+}
+
+.home .cs-hoidap .cs-titlecatehome::before,
+.cs-titlecatehome::before,
+h2.cs-titlecatehome::before {
+  display: none !important;
+}
+
+.home .cs-hoidap .cs-titlecatehome a,
+.cs-titlecatehome a,
+h2.cs-titlecatehome a {
+  color: #13622e !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  transition: color 0.2s ease !important;
+}
+
+.home .cs-hoidap .cs-titlecatehome a:hover,
+.cs-titlecatehome a:hover,
+h2.cs-titlecatehome a:hover {
+  color: #0e4620 !important;
+  text-decoration: underline !important;
+}
