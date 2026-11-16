@@ -2045,7 +2045,7 @@
 		}
 
 		.home .cs-hoidap .section-content>.row {
-			background-color: #fbfae1;
+			background-color: #ffffff;
 			border-radius: 40px;
 			padding: 60px 40px 0px 30px;
 		}
@@ -3108,7 +3108,7 @@
 		}
 
 		.archive.category .blog-wrapper>.row>.col>.row>.post-item:nth-child(1) .box-blog-post .post-title {
-			font-size: 25px;
+			font-size: 20px;
 			margin-bottom: 0px;
 			font-weight: bold;
 		}
@@ -5690,7 +5690,7 @@
 			}
 
 			.home .cs-hoidap .cs-col1 {
-				background-color: #fbfae1;
+				background-color: #ffffff;
 				padding: 15px 32px 0px 27px;
 				border-radius: 20px;
 				margin-bottom: 30px;
