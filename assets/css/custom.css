@@ -2507,3 +2507,172 @@ span.count-up.active {
     margin-top: 4px !important;
   }
 }
+
+/* ==========================================================================
+   FIXED TOC (TÓM TẮT NỘI DUNG) & SIDEBAR BANNER STYLING
+   ========================================================================== */
+#ftwp-trigger,
+.ftwp-widget #ftwp-trigger,
+#fixedtoc-3 #ftwp-trigger,
+#ftwp-container #ftwp-trigger,
+#ftwp-container.ftwp-wrap #ftwp-trigger {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+#ftwp-header-control,
+#ftwp-header-minimize,
+.ftwp-icon-expand,
+.ftwp-icon-number {
+  display: none !important;
+}
+
+#fixedtoc-3,
+.widget.ftwp-widget {
+  margin-bottom: 25px !important;
+}
+
+#ftwp-container,
+#ftwp-container.ftwp-wrap {
+  position: static !important;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+}
+
+#ftwp-container.ftwp-wrap #ftwp-contents,
+#fixedtoc-3 #ftwp-contents,
+.ftwp-widget #ftwp-contents {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  position: static !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+  box-sizing: border-box !important;
+  padding: 0 !important;
+}
+
+#ftwp-container.ftwp-wrap #ftwp-header,
+#fixedtoc-3 #ftwp-header,
+.ftwp-widget #ftwp-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  background: #f8fafc !important;
+  border-bottom: 2px solid #13622e !important;
+  padding: 12px 16px !important;
+  margin: 0 !important;
+  cursor: default !important;
+}
+
+#ftwp-container.ftwp-wrap #ftwp-header-title,
+#fixedtoc-3 #ftwp-header-title,
+.ftwp-widget #ftwp-header-title {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #13622e !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  line-height: 1.4 !important;
+}
+
+#ftwp-container.ftwp-wrap #ftwp-header-title::before,
+#fixedtoc-3 #ftwp-header-title::before,
+.ftwp-widget #ftwp-header-title::before {
+  content: "📋" !important;
+  font-size: 16px !important;
+}
+
+#ftwp-container.ftwp-wrap #ftwp-list,
+#fixedtoc-3 #ftwp-list,
+.ftwp-widget #ftwp-list {
+  display: block !important;
+  list-style: decimal !important;
+  list-style-position: outside !important;
+  padding: 14px 18px 14px 38px !important;
+  margin: 0 !important;
+  background: #ffffff !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+}
+
+#ftwp-container #ftwp-list .ftwp-item,
+#fixedtoc-3 #ftwp-list .ftwp-item,
+.ftwp-widget #ftwp-list .ftwp-item {
+  display: list-item !important;
+  list-style: decimal !important;
+  margin: 0 0 10px 0 !important;
+  padding: 0 !important;
+  line-height: 1.5 !important;
+  text-align: left !important;
+}
+
+#ftwp-container #ftwp-list .ftwp-item:last-child,
+#fixedtoc-3 #ftwp-list .ftwp-item:last-child,
+.ftwp-widget #ftwp-list .ftwp-item:last-child {
+  margin-bottom: 0 !important;
+}
+
+#ftwp-container #ftwp-list .ftwp-anchor,
+#fixedtoc-3 #ftwp-list .ftwp-anchor,
+.ftwp-widget #ftwp-list .ftwp-anchor {
+  display: inline !important;
+  color: #334155 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  line-height: 1.5 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  transition: color 0.2s ease !important;
+}
+
+#ftwp-container #ftwp-list .ftwp-anchor::before {
+  display: none !important;
+}
+
+#ftwp-container #ftwp-list .ftwp-anchor:hover,
+#fixedtoc-3 #ftwp-list .ftwp-anchor:hover,
+.ftwp-widget #ftwp-list .ftwp-anchor:hover {
+  color: #13622e !important;
+  text-decoration: underline !important;
+}
+
+#ftwp-container #ftwp-list .ftwp-text,
+#fixedtoc-3 #ftwp-list .ftwp-text,
+.ftwp-widget #ftwp-list .ftwp-text {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: inherit !important;
+  line-height: 1.5 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+#secondary .widget_custom_html img,
+#custom_html-4 img,
+.cs-imgqc img {
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
