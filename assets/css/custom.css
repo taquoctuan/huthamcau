@@ -166,43 +166,125 @@ figure.wp-caption img {
 }
 
 /* ============================================================
-   4. KHỐI THỐNG KÊ (4 STATISTIC COUNTER BOXES)
+   4. KHỐI THỐNG KÊ (4 STATISTIC COUNTER BOXES - CÂN ĐỐI ĐỒNG ĐỀU)
    ============================================================ */
 
-.icon-box {
+.cs-nproducts > .section-content > .row:nth-child(1) .icon-box,
+.cs-nproducts .icon-box.featured-box {
   box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 155px !important;
+  height: 155px !important;
+  padding: 10px 4px !important;
+  text-align: center !important;
+  background: #fff !important;
 }
 
-@media screen and (max-width: 767px) {
-  /* Chuyển 4 hộp thành lưới 2x2 trên tablet và mobile */
-  .icon-box {
-    width: 50% !important;
+.cs-nproducts .icon-box.featured-box .icon-box-img {
+  margin: 0 auto 6px !important;
+  flex-shrink: 0 !important;
+}
+
+.cs-nproducts .icon-box.featured-box .icon-box-text,
+.cs-nproducts .icon-box.featured-box .icon-box-text .text {
+  width: 100% !important;
+  text-align: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.cs-nproducts .icon-box.featured-box .text > p:first-child {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.5px !important;
+  line-height: 1.3 !important;
+  margin: 0 0 4px 0 !important;
+  color: #111827 !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+}
+
+.cs-nproducts .icon-box.featured-box .text > p:nth-child(2) {
+  font-style: italic !important;
+  font-size: 13.5px !important;
+  line-height: 1.3 !important;
+  color: #333 !important;
+  margin: 0 !important;
+  white-space: nowrap !important;
+}
+
+/* Desktop layout (>= 768px): 4 columns side by side with seamless 1px border dividers */
+@media screen and (min-width: 768px) {
+  .cs-nproducts > .section-content > .row:nth-child(1) .icon-box,
+  .cs-nproducts .icon-box.featured-box {
+    width: 25% !important;
     float: left !important;
-    min-height: 145px !important;
-    padding: 10px 4px !important;
+    border: 1px solid #ccc !important;
+    border-right: none !important;
   }
 
-  .icon-box-text {
-    height: auto !important;
+  .cs-nproducts > .section-content > .row:nth-child(1) .icon-box:last-child,
+  .cs-nproducts .icon-box.featured-box:last-child {
+    border-right: 1px solid #ccc !important;
+  }
+}
+
+/* Tablet & Mobile layout (< 768px): 2x2 grid with seamless 1px border dividers */
+@media screen and (max-width: 767px) {
+  .cs-nproducts > .section-content > .row:nth-child(1) .icon-box,
+  .cs-nproducts .icon-box.featured-box {
+    width: 50% !important;
+    float: left !important;
+    min-height: 140px !important;
+    height: 140px !important;
+    padding: 8px 3px !important;
+    border: 1px solid #ccc !important;
+  }
+
+  .cs-nproducts > .section-content > .row:nth-child(1) .icon-box:nth-child(odd),
+  .cs-nproducts .icon-box.featured-box:nth-child(odd) {
+    border-right: none !important;
+  }
+
+  .cs-nproducts > .section-content > .row:nth-child(1) .icon-box:nth-child(1),
+  .cs-nproducts > .section-content > .row:nth-child(1) .icon-box:nth-child(2),
+  .cs-nproducts .icon-box.featured-box:nth-child(1),
+  .cs-nproducts .icon-box.featured-box:nth-child(2) {
+    border-bottom: none !important;
+  }
+
+  .cs-nproducts .icon-box.featured-box .text > p:first-child {
+    font-size: 15px !important;
+  }
+
+  .cs-nproducts .icon-box.featured-box .text > p:nth-child(2) {
+    font-size: 12.5px !important;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .icon-box {
-    width: 50% !important;
-    padding: 8px 2px !important;
+  .cs-nproducts > .section-content > .row:nth-child(1) .icon-box,
+  .cs-nproducts .icon-box.featured-box {
+    min-height: 130px !important;
+    height: 130px !important;
+    padding: 6px 2px !important;
   }
 
-  .icon-box-img {
+  .cs-nproducts .icon-box.featured-box .icon-box-img {
     width: 45px !important;
+    margin-bottom: 3px !important;
   }
 
-  .icon-box .text > p:nth-child(1) {
-    font-size: 15px !important;
+  .cs-nproducts .icon-box.featured-box .text > p:first-child {
+    font-size: 13.5px !important;
+    letter-spacing: -0.6px !important;
   }
 
-  .icon-box .text > p:nth-child(2) {
-    font-size: 12px !important;
+  .cs-nproducts .icon-box.featured-box .text > p:nth-child(2) {
+    font-size: 11.5px !important;
   }
 }
 
@@ -2230,16 +2312,8 @@ section.section {
 
 
 /* ==========================================================================
-   STATISTICS COUNTER CARDS STYLING & ANIMATION VISIBILITY
+   STATISTICS COUNTER CARDS ANIMATION VISIBILITY
    ========================================================================== */
-.cs-nproducts .icon-box .text > p:first-child {
-  font-size: 22px !important;
-  font-weight: 700 !important;
-  line-height: 1.3 !important;
-  margin-bottom: 4px !important;
-  color: #111827 !important;
-}
-
 .cs-nproducts .icon-box .text span.count-up,
 span.count-up {
   display: inline-block !important;
