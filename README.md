@@ -1,6 +1,6 @@
 # Môi Trường Xanh - Website Clone
 
-> Website clone từ [moitruongxanh.vn](https://moitruongxanh.vn) - Dịch vụ hút hầm cầu, thông cống nghẹt
+> Website clone từ [moitruongxanhbrvt.com](https://moitruongxanhbrvt.com) - Dịch vụ hút hầm cầu, thông cống nghẹt
 
 ## 📁 Cấu trúc dự án
 
@@ -50,13 +50,13 @@ quanghong-vn/
 ## 📝 Lưu ý
 
 - Website gốc sử dụng WordPress với theme Flatsome
-- Các file HTML vẫn chứa một số link tuyệt đối tới `moitruongxanh.vn`
+- Các file HTML vẫn chứa một số link tuyệt đối tới `moitruongxanhbrvt.com`
 - CSS/JS đã được gom về thư mục `assets/` để dễ quản lý
 - Hình ảnh trong thư mục `assets/images/uploads/` giữ cấu trúc năm/tháng gốc
 
 ## 📅 Clone date
 
 - **Ngày clone:** 2026-11-07
-- **Nguồn:** https://moitruongxanh.vn
+- **Nguồn:** https://moitruongxanhbrvt.com
 
-https://taquoctuan.github.io/huthamcau/
+https://moitruongxanhbrvt.com/
